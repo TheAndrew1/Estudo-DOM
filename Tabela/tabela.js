@@ -4,6 +4,8 @@ let tabela = document.getElementById("tabela");
 
 adicionar.addEventListener("click", add);
 
+let alunos = [];
+
 function add(){
     let linha = document.createElement("tr");
     let elementos = [];

@@ -12,6 +12,11 @@ table{
 
 th{
     background-color: aquamarine;
+    text-align: center;
+}
+
+td{
+    text-align: center;
 }
 
 div{
