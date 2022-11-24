@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+
+p{
+    margin: 0s;
+}
+
+table{
+    margin: auto;
+}
+
+th{
+    background-color: aquamarine;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+button{
+    background-color: none;
+    border-style: none;
+}

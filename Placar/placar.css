@@ -1,0 +1,21 @@
+body{
+    background-color: aqua;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr;
+    margin: auto;
+}
+h1{
+    font: normal 90px arial;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+input{
+    background-color: yellow;
+}
+p{
+    margin: 0;
+    text-align: center;
+}
+button{
+    grid-column: 1 / span 2;
+}
