@@ -13,9 +13,29 @@ function add(){
 
     for(var i=0; i<4; i++)
     {
-        let campos = ["id", "nome", "curso", "e-mail"];
-        elementos[i] = document.createElement("td");
-        elementos[i].innerText = prompt(`Digite o ${campos[i]} do aluno`);
+        let campos = ["nome", "curso", "e-mail"];
+
+        if(i == 0)
+        {
+            elementos[i] = document.createElement("td");
+            
+            if(id.length == 0)
+            {
+                id[0] = 1;
+            }
+            else
+            {
+                id[id.length] = id[id.length - 1] + 1;
+            }
+
+            elementos[i].innerText = id[id.length - 1];
+        }
+        else
+        {
+            elementos[i] = document.createElement("td");
+            elementos[i].innerText = prompt(`Digite o ${campos[i-1]} do aluno`);
+        }
+        
 
         linha.appendChild(elementos[i]);
     }
